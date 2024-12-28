@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to the University Social Portal</h1>
+    </header>
+    <main>
+      <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="rollNo">Enter Your Roll Number:</label>
+          <input type="text" id="rollNo" name="rollNo" placeholder="E.g., 12345" required>
+          <button type="submit">Send OTP</button>
+        </form>
+      </section>
+      <section id="otp" style="display: none;">
+        <h2>Enter OTP</h2>
+        <form id="otpForm">
+          <label for="otpInput">OTP:</label>
+          <input type="text" id="otpInput" name="otp" placeholder="Enter OTP" required>
+          <button type="submit">Verify</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
